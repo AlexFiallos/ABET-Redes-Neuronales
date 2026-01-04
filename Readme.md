@@ -103,7 +103,7 @@ FUNCIONAMIENTO DEL SISTEMA
 5. Se envía un comando MQTT (PAPER, PLASTIC o METAL).
 6. El ESP32 recibe el comando.
 7. Los servomotores redirigen el residuo.
-8. La banda transportadora mantiene el flujo continuo.
+8. La banda transportadora mantiene el flujo.
 
 
 ------------------------------------------------------------
@@ -114,5 +114,6 @@ El sistema permite clasificar residuos de manera automática,
 eficiente y en tiempo real, integrando visión artificial,
 comunicación inalámbrica y control embebido en una solución
 funcional y escalable.
+
 
 
