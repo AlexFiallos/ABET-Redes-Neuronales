@@ -1,9 +1,11 @@
-============================================================
+
 SISTEMA DE CLASIFICACIÓN AUTOMÁTICA DE RESIDUOS
 YOLOv8 + ESP32 + MQTT
-============================================================
+------------------------------------------------------------
+
 
 DESCRIPCIÓN GENERAL
+------------------------------------------------------------
 
 Este proyecto implementa un sistema inteligente de clasificación
 automática de residuos utilizando visión por computadora y control
@@ -19,22 +21,37 @@ mediante comunicación MQTT.
 ARQUITECTURA DEL SISTEMA
 ------------------------------------------------------------
 
+
 Flujo general del sistema:
 
 Cámara
+ 
   ↓
+
 YOLOv8 (Detección de objetos)
+  
   ↓
+
 Filtrado por nivel de confianza
+  
   ↓
+
 Selección de clase dominante
+  
   ↓
+
 Publicación del comando vía MQTT
+  
   ↓
+
 ESP32 (Suscriptor MQTT)
+  
   ↓
+
 Control de servomotores
+  
   ↓
+
 Clasificación física del residuo
 
 
@@ -59,12 +76,19 @@ ESTRUCTURA DEL PROYECTO
 ------------------------------------------------------------
 
 proyecto-clasificador-residuos
+
 |
+
 |-- detection
+
 |   |-- detector_yolo_mqtt.py
+
 |   |-- modelo_yolo.pt
+
 |
+
 |-- esp32
+
 |   |-- esp32_clasificador.ino
 
 
@@ -92,8 +116,3 @@ comunicación inalámbrica y control embebido en una solución
 funcional y escalable.
 
 
-------------------------------------------------------------
-AUTOR
-------------------------------------------------------------
-
-Proyecto académico desarrollado con YOLOv8 y ESP32.
